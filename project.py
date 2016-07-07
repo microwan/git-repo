@@ -2388,7 +2388,7 @@ class Project(object):
             return self._InitWorkTree(force_sync=False)
           except:
             raise e
-        raise e
+#        raise e
 
       if init_dotgit:
         _lwrite(os.path.join(dotgit, HEAD), '%s\n' % self.GetRevisionId())
