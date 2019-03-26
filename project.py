@@ -1999,7 +1999,8 @@ class Project(object):
       cmd.append('--no-tags')
     else:
       cmd.append('--tags')
-
+      cmd.append('--force')
+      
     if prune:
       cmd.append('--prune')
 
